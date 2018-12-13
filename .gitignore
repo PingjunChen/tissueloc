@@ -1,5 +1,7 @@
 
-
-Slides/
 *.pyc
 
+data/
+.venv
+__pycache__/
+.pytest_cache/
