@@ -106,7 +106,7 @@ def find_tissue_cnts(bw_img):
     return cnts
 
 
-def locate_tissue_contours(slide_path,
+def locate_tissue_cnts(slide_path,
                            max_img_size=2048,
                            smooth_sigma=13,
                            thresh_val = 0.80,
