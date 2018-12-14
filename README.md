@@ -10,5 +10,5 @@ $ apt-get install openslide-tools
 ```
 2. Install [TissueLocalizer](https://pypi.org/project/TissueLocalizer).
 ```
-$ pip install TissueLocalizer
+$ pip install tissueloc
 ```
