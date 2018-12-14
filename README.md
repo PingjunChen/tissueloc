@@ -8,8 +8,7 @@ Localize the tissue regions in whole slide pathology images.
 ```
 $ apt-get install openslide-tools
 ```
-2. Install relied packages
+2. Install [TissueLocalizer](https://pypi.org/project/TissueLocalizer).
 ```
-# pip install -r requirements.txt
+$ pip install TissueLocalizer
 ```
-3. Install [TissueLocalizer]()
