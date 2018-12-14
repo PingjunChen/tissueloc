@@ -47,21 +47,26 @@ def locate_tissue_cnts(slide_path,
 ```
 import tissueloc as tl
 # Step 1: Select the proper level
+slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
+max_img_size = 2048
 s_level, d_factor = tl.select_slide_level(slide_path, max_img_size)
 # Step 2: Load Slide image with selected level
 slide_img = tl.load_slide_img(slide_path, s_level)
 # Step 3: Convert color image to gray
 gray_img = tl.rgb2gray(slide_img)
 # Step 4: Smooth and Binarize
+thresh_val = 0.8
+smooth_sigma = 13
 bw_img = tl.thresh_slide(gray_img, thresh_val, sigma=smooth_sigma)
 # Step 5: Fill tissue holes
 bw_fill = tl.fill_tissue_holes(bw_img)
 # Step 6: Remove small tissues
+min_tissue_size = 10000
 bw_remove = tl.remove_small_tissue(bw_fill, min_tissue_size)
 # Step 7: Locate tissue regions
 cnts = tl.find_tissue_cnts(bw_remove)
 ```
-Or using one function:
+Or using just one function:
 ```
 import tissueloc as tl
 slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
