@@ -1,7 +1,18 @@
+# Data Folder
 data/
 
+# Intermediate files
 *.pyc
-
-.venv
 __pycache__/
+
+# Virtual environment
+.venv
+
+# Testing
 .pytest_cache/
+
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/

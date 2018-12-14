@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 PKG_NAME = "TissueLocalizer"
-VERSION = 1.0.0
+VERSION = "1.0.0"
 DESCRIPTION = "Localize the tissue regions in whole slide pathology images."
 HOMEPAGE = "https://github.com/PingjunChen/TissueLocalizer"
 LICENSE = "MIT"
