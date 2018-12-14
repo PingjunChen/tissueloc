@@ -25,7 +25,6 @@ CLASSIFIERS = [
     'Programming Language :: Python :: 3',
     'Programming Language :: Python :: 3.6',
     'Topic :: Scientific/Engineering',
-    'Topic :: Whole Slide Image Analysis',
 ]
 
 args = dict(
