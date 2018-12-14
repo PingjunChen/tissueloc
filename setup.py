@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 import tissueloc
 
 PKG_NAME = "tissueloc"
-VERSION = "1.2.0"
+VERSION = "2.0.0"
 DESCRIPTION = "Localize the tissue regions in whole slide pathology images."
 HOMEPAGE = "https://github.com/PingjunChen/TissueLocalizer"
 LICENSE = "MIT"

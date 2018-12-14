@@ -35,9 +35,9 @@ def test_locate_tissue_seperately():
     cv2.drawContours(slide_img, cnts, -1, (0, 255, 0), 9)
     # misc.imsave('cnt_slide.png', slide_img)
     # import pdb; pdb.set_trace()
-    plt.imshow(slide_img)
-    plt.axis('off')
-    plt.show()
+    # plt.imshow(slide_img)
+    # plt.axis('off')
+    # plt.show()
 
 
 def test_locate_tissue():

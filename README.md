@@ -1,6 +1,6 @@
 TissueLocalizer
 ========
-* Localize the tissue regions in whole slide pathology images
+### Localize the tissue regions in whole slide pathology images
 
 <img src="TissueLocalizationDemo.png" width="800" height="320" alt="Banner">
 
