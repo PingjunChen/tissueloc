@@ -2,11 +2,10 @@
 
 import os, sys
 from setuptools import setup, find_packages
-
 import tissueloc
 
 PKG_NAME = "tissueloc"
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 DESCRIPTION = "Localize the tissue regions in whole slide pathology images."
 HOMEPAGE = "https://github.com/PingjunChen/TissueLocalizer"
 LICENSE = "MIT"
@@ -15,9 +14,7 @@ AUTHOR_EMAIL = "chenpingjun@gmx.com"
 
 REQS = []
 with open('requirements.txt') as f:
-    for pkg in f.read().splitlines():
-        pos = pkg.find("==")
-        REQS.append(pkg[:pos])
+    REQS = [pkg.replace("==", ">=") for pkg in f.read().splitlines()]
 
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',

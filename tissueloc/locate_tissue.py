@@ -107,10 +107,10 @@ def find_tissue_cnts(bw_img):
 
 
 def locate_tissue_cnts(slide_path,
-                           max_img_size=2048,
-                           smooth_sigma=13,
-                           thresh_val = 0.80,
-                           min_tissue_size=10000):
+                       max_img_size=2048,
+                       smooth_sigma=13,
+                       thresh_val = 0.80,
+                       min_tissue_size=10000):
     """ Locate tissue contours of whole slide image
     Parameters
     ----------
