@@ -13,7 +13,7 @@ LICENSE = "MIT"
 AUTHOR_NAME = "Pingjun Chen"
 AUTHOR_EMAIL = "chenpingjun@gmx.com"
 
-REQS = ""
+REQS = []
 with open('requirements.txt') as f:
     for pkg in f.read().splitlines():
         pos = pkg.find("==")
