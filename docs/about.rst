@@ -5,10 +5,10 @@ About tissueloc
 
 There are two main functions in this package:
 
-1. Load the whole slide image from low level, which is set according to the maximum width or height that loaded image could be.
+1. Load the whole slide image from low level, which is set according to the maximum width or height that the loaded image could own.
 
-2. Locate tissue regions through a series of basic image processing procedures.
+2. Locate tissue regions through a series of image processing procedures.
 
-This whole slide tissue localization is entirely based on image processing algorithms, which is extremely fast and could be preprocessing step for whole slide image automatic analysis.
+This whole slide tissue localization is entirely based on basic image processing algorithms, which is extremely fast and could act as a preprocessing step for whole slide image automatic analysis.
 
 
