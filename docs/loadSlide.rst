@@ -8,14 +8,14 @@ select_slide_level
 def select_slide_level(slide_path, max_size=2048):
     """Find the slide level to perform tissue localization
 
-    Parameters:
+    Parameters
 
     slide_path : valid slide path
         The slide to process.
     max_size : int
         Max height and width for the size of slide with selected level
 
-    Returns:
+    Returns
 
     level : int
         Selected level.
@@ -35,14 +35,14 @@ load_slide_img
 def load_slide_img(slide_path, level=0):
     """Load slide image with specific level
 
-    Parameters:
+    Parameters
 
     slide_path : valid slide path
         The slide to load.
     level : int
         Slide level to load.
     
-    Returns:
+    Returns
 
     slide_img : np.array
         Numpy matrix with RGB three channels.
