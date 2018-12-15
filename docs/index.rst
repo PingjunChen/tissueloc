@@ -6,15 +6,24 @@
 Welcome to tissueloc's documentation!
 =====================================
 
+.. _tissueloc: https://github.com/PingjunChen/TissueLocalizer
+
+* :ref:`user-docs`
+* :ref:`about-docs`
+
+.. _user-docs:
+
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: User Documentation
 
+   loadSlide
+   locateTissue
 
+.. _about-docs:
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: About tissueloc
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   about
