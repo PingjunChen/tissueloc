@@ -9,6 +9,4 @@ There are two main functions in this package:
 
 2. Locate tissue regions through a series of image processing procedures.
 
-This whole slide tissue localization is entirely based on basic image processing algorithms, which is extremely fast and could act as a preprocessing step for whole slide image automatic analysis.
-
-
+This whole slide tissue localization is entirely based on basic image processing algorithms, which is extremely fast and could act as a preprocessing step for whole slide image automatic analysis. The parameters used in the processing may need to change according to specific application.
