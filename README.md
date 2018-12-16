@@ -1,10 +1,10 @@
 TissueLocalizer
 ========
-### Localize the tissue regions in whole slide pathology images
+## Localize the tissue regions in whole slide pathology images
 
 <img src="TissueLocalizationDemo.png" width="800" height="320" alt="Banner">
 
-### Installation
+## Installation
 1. Install [OpenSlide](https://openslide.org/download/).
 ```
 $ apt-get install openslide-tools
@@ -14,7 +14,7 @@ $ apt-get install openslide-tools
 $ pip install tissueloc
 ```
 
-### Usage
+## Usage
 ```
 def locate_tissue_cnts(slide_path,
                        max_img_size=2048,
@@ -43,7 +43,7 @@ def locate_tissue_cnts(slide_path,
     """
 ```
 
-### Procedures
+## Procedures
 ```
 import tissueloc as tl
 # Step 1: Select the proper level
@@ -77,3 +77,6 @@ cnts, d_factor = locate_tissue_cnts(slide_path,
                                     thresh_val=0.80,
                                     min_tissue_size=10000)
 ```
+
+## Documentation
+* Hosted in [https://tissuelocalizer.readthedocs.io](https://tissuelocalizer.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
