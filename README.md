@@ -79,4 +79,12 @@ cnts, d_factor = locate_tissue_cnts(slide_path,
 ```
 
 ## Documentation
-* Hosted in [https://tissuelocalizer.readthedocs.io](https://tissuelocalizer.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
+* Hosted in [https://tissueloc.readthedocs.io](https://tissueloc.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
+
+
+## License
+[tissueloc](https://github.com/PingjunChen/tissueloc) is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
+
+
+## Contributors
+See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
