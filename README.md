@@ -1,15 +1,15 @@
-TissueLocalizer
+tissueloc
 ========
 ## Localize the tissue regions in whole slide pathology images
 
-<img src="TissueLocalizationDemo.png" width="800" height="320" alt="Banner">
+<img src="tissuelocDemo.png" width="800" height="320" alt="Banner">
 
 ## Installation
 1. Install [OpenSlide](https://openslide.org/download/).
 ```
 $ apt-get install openslide-tools
 ```
-2. Install [TissueLocalizer](https://pypi.org/project/TissueLocalizer).
+2. Install [tissueloc](https://pypi.org/project/tissueloc/).
 ```
 $ pip install tissueloc
 ```

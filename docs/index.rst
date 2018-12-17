@@ -8,7 +8,7 @@ Welcome to tissueloc's documentation!
 
 `tissueloc`_ is used for tissue localization in whole slide pathology image.
 
-.. _tissueloc: https://github.com/PingjunChen/TissueLocalizer
+.. _tissueloc: https://github.com/PingjunChen/tissueloc
 
 * :ref:`user-docs`
 * :ref:`about-docs`

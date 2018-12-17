@@ -1,7 +1,7 @@
 About tissueloc
 ========
 
-`tissueloc <https://github.com/PingjunChen/TissueLocalizer>`_ is a python-based package used for whole slide pathology image tissue localization.
+`tissueloc <https://github.com/PingjunChen/tissueloc>`_ is a python-based package used for whole slide pathology image tissue localization.
 
 There are two main functions in this package:
 
