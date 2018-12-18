@@ -35,7 +35,7 @@ def test_locate_tissue_seperately():
     # misc.imsave("bw.png", (bw_img*255.0).astype(np.uint8))
     # Step 5: Fill tissue holes    
     bw_fill = fill_tissue_holes(bw_img)
-    misc.imsave("fill.png", (bw_fill*255.0).astype(np.uint8))
+    # misc.imsave("fill.png", (bw_fill*255.0).astype(np.uint8))
     # Step 6: Remove small tissues
     min_size = 10000
     bw_remove = remove_small_tissue(bw_fill, min_size)
