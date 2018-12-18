@@ -1,4 +1,5 @@
 # Data Folder
+.vscode/
 data/
 
 # Intermediate files
