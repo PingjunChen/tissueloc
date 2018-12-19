@@ -57,3 +57,29 @@ def test_locate_tissue():
                                         min_tissue_size=10000)
     print("Downsampling fator is: {}".format(d_factor))
     print("There are {} contours in the slide.".format(len(cnts)))
+
+
+# def test_gen_intermediate_files():
+#     img_path = "../data/Imgs/20181218042458.jpg"
+#     # Step 2: Load Slide image with selected level    
+#     slide_img = misc.imread(img_path)
+#     misc.imsave('ori.png', slide_img) 
+#     # Step 3: Convert color image to gray     
+#     gray_img = rgb2gray(slide_img)
+#     misc.imsave("gray.png", gray_img)
+#     # Step 4: Smooth and Binarize    
+#     thresh_val = 0.8
+#     bw_img = thresh_slide(gray_img, thresh_val=0.8, sigma=5)
+#     misc.imsave("bw.png", (bw_img*255.0).astype(np.uint8))
+#     # Step 5: Fill tissue holes    
+#     bw_fill = fill_tissue_holes(bw_img)
+#     misc.imsave("fill.png", (bw_fill*255.0).astype(np.uint8))
+#     # Step 6: Remove small tissues
+#     min_size = 10000
+#     bw_remove = remove_small_tissue(bw_fill, min_size)
+#     misc.imsave("remove.png", (bw_remove*255.0).astype(np.uint8))
+#     # Step 7: Locate tissue regions    
+#     cnts = find_tissue_cnts(bw_remove)
+#     slide_img = np.ascontiguousarray(slide_img, dtype=np.uint8)
+#     cv2.drawContours(slide_img, cnts, -1, (0, 255, 0), 9)
+#     misc.imsave('cnt.png', slide_img)
