@@ -13,3 +13,4 @@ before_install:
 
 script:
     - cd tests
+    - echo "Hello tissueloc!"
