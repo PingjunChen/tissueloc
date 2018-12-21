@@ -12,5 +12,5 @@ before_install:
     - pip install -U pytest
 
 script:
-    - cd tests
-    - echo "Hello tissueloc!"
+    - cd test
+    - echo "Hello tissueloc!!!"
