@@ -14,7 +14,7 @@ authors:
 affiliations:
  - name: Department of Biomedical Engineering, University of Florida
    index: 1
-date: 20 December 2018
+date: 28 December 2018
 bibliography: paper.bib
 ---
 
