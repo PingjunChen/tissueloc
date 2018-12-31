@@ -5,7 +5,7 @@ python:
 before_install:
     - sudo apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable
     - sudo apt-get update
-    - sudo apt-get install libgeos-dev
+    - sudo apt-get install openslide-tools
     - pip install --upgrade pip
     - pip install opencv-python
     - pip install shapely
