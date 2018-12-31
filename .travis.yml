@@ -13,4 +13,4 @@ before_install:
 
 script:
     - cd test
-    - echo "Hello tissueloc!!!"
+    - pytest
