@@ -10,6 +10,7 @@ before_install:
     - pip install opencv-python
     - pip install shapely
     - pip install -U pytest
+    - cd tissueloc
 
 script:
     - cd test

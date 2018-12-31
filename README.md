@@ -43,7 +43,19 @@ def locate_tissue_cnts(slide_path,
     """
 ```
 
-## Procedures
+### Example
+```
+import tissueloc as tl
+slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
+# locate tissue contours with default parameters
+cnts, d_factor = locate_tissue_cnts(slide_path,
+                                    max_img_size=2048,
+                                    smooth_sigma=13,
+                                    thresh_val=0.80,
+                                    min_tissue_size=10000)
+```
+
+### Procedures
 ```
 import tissueloc as tl
 # Step 1: Select the proper level
@@ -66,17 +78,7 @@ bw_remove = tl.remove_small_tissue(bw_fill, min_tissue_size)
 # Step 7: Locate tissue regions
 cnts = tl.find_tissue_cnts(bw_remove)
 ```
-Or using just one function:
-```
-import tissueloc as tl
-slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
-# locate tissue contours with default parameters
-cnts, d_factor = locate_tissue_cnts(slide_path,
-                                    max_img_size=2048,
-                                    smooth_sigma=13,
-                                    thresh_val=0.80,
-                                    min_tissue_size=10000)
-```
+
 
 ## Documentation
 Hosted in [https://tissueloc.readthedocs.io](https://tissueloc.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
