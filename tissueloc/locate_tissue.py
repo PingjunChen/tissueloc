@@ -7,7 +7,7 @@ from skimage import filters, img_as_ubyte
 from skimage.morphology import remove_small_objects
 import cv2
 
-from load_slide import select_slide_level, load_slide_img
+from .load_slide import select_slide_level, load_slide_img
 
 def rgb2gray(img):
     """Convert RGB image to gray space.
