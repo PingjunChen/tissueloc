@@ -14,7 +14,13 @@ tissueloc
 ```
 $ apt-get install openslide-tools
 ```
-2. Install [tissueloc](https://pypi.org/project/tissueloc/).
+2. Installing Python dependencies.
+```
+$ pip install opencv-python
+$ pip install scikit-image
+$ pip install openslide-python
+```
+3. Install [tissueloc](https://pypi.org/project/tissueloc/).
 ```
 $ pip install tissueloc
 ```
