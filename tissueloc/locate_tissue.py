@@ -2,7 +2,6 @@
 
 import os, sys
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.ndimage import binary_fill_holes
 from skimage import filters, img_as_ubyte
 from skimage.morphology import remove_small_objects
@@ -148,8 +147,5 @@ def locate_tissue_cnts(slide_path,
 
     # slide_img = np.ascontiguousarray(slide_img, dtype=np.uint8)
     # cv2.drawContours(slide_img, cnts, -1, (0, 255, 0), 5)
-    # plt.imshow(slide_img)
-    # plt.axis('off')
-    # plt.show()
 
     return cnts, d_factor
