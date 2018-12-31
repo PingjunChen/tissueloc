@@ -1,5 +1,6 @@
 # Data Folder
 .vscode/
+data/
 
 .DS_Store
 *.pyc

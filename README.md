@@ -49,6 +49,7 @@ def locate_tissue_cnts(slide_path,
 ```
 
 ### Example
+Testing slide can be downloaded from [Figshare](https://figshare.com/articles/Demo_Whole_Slide_Images/7532978).
 ```
 import tissueloc as tl
 slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
