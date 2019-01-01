@@ -32,7 +32,7 @@ The width and height of WSI are far larger than 10,000 pixels. Locating tissue r
 Tissue localization is applied on the selected low level image based on
 a series of basic image processing techniques. The main procedures include: 1) Low level WSI loading. 2) Color space conversion from RGB to gray. 3) Inverse binarization to generate binary image. 4) Hole filling of the binary image. 5) Small object removal. 6) Contour finding.
 
- ![Tissue localization pipeline. The main procedures include: 1) Low level image loading. 2) Color space conversion. 3) Inverse binarization. 4) Hole filling. 5) Small object removal. 6) Contour finding.](tissuelocPipeline.png)
+ ![Tissue localization pipeline for whole slide image. The main procedures include: 1) Low level image loading. 2) Color space conversion. 3) Inverse binarization. 4) Hole filling. 5) Small object removal. 6) Contour finding.](tissuelocPipeline.png)
 
 The proposed WSI tissue localization is very efficient as it is entirely based on basic image processing techniques and applied on low level image, which could act as a preprocessing step for automatic WSI analysis. Researchers can focus their analysis on those patches inside the located tissue regions and avoid those irrelevant background regions.
 
