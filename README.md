@@ -105,4 +105,4 @@ See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the
 ## Contributing
 ``tissueloc`` is an  open source project and anyone is welcome to contribute. An easy way to get started is by suggesting a new enhancement on the [Issues](https://github.com/PingjunChen/tissueloc/issues). If you have found a bug, then either report this through [Issues](https://github.com/PingjunChen/tissueloc/issues), or even better, make a fork of the repository, fix the bug and then create a [Pull Request](https://github.com/PingjunChen/tissueloc/pulls) to get the fix into the master branch.
 
-We would like to test this package on more diversified digital slides. Slides (low level images would be better) and their corresponding results are also very welcome to [Pull Request](https://github.com/PingjunChen/tissueloc/pulls).
+We would like to test this package on more diversified digital slides. Slides (low level images would be better) and their corresponding results are also very welcome as [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls).
