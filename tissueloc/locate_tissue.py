@@ -9,6 +9,7 @@ import cv2
 
 from .load_slide import select_slide_level, load_slide_img
 
+
 def rgb2gray(img):
     """Convert RGB image to gray space.
     Parameters

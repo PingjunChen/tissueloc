@@ -2,13 +2,12 @@
 
 import os, sys
 import numpy as np
-import matplotlib.pyplot as plt
 import pytest
 
 TEST_PATH = os.path.abspath(os.path.dirname(__file__))
 PRJ_PATH = os.path.dirname(TEST_PATH)
-sys.path.insert(0, os.path.join(PRJ_PATH, "tissueloc"))
-from load_slide import select_slide_level, load_slide_img
+sys.path.insert(0, PRJ_PATH)
+from tissueloc.load_slide import select_slide_level, load_slide_img
 
 
 # def test_select_slide_level():
