@@ -25,7 +25,7 @@ bibliography: paper.bib
 
 
 # Overview
-``tissueloc`` mainly contains two functionalities: selecting proper low level image from WSI and tissue localization based on selected image.
+``tissueloc`` mainly contains two functionalities: selecting proper low level image from WSI and tissue localization based on the selected low level WSI.
 
 The width and height of WSI are far larger than 10,000 pixels. Locating tissue regions directly on WSI image is computationally expensive. However, based on the pyramid storage structure of WSI, we can select a proper low level image from the WSI for following tissue localization. The low level slide image can have much smaller size, thus can speed up the tissue localization process. Based on the setting of maximum width or height of the low level image, we select the level that its corresponding image has size smaller but closest to the setting.
 
