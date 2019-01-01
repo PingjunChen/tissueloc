@@ -1,6 +1,6 @@
 language: python
 python:
-    - "3.7"
+    - "3.6"
 
 before_install:
     - sudo apt-add-repository -y ppa:ubuntugis/ubuntugis-unstable
@@ -9,7 +9,6 @@ before_install:
     - pip install --upgrade pip
     - pip install requirements.txt
     - pip install -U pytest
-
 script:
     - cd test
     - pytest
