@@ -1,11 +1,9 @@
-tissueloc
+tissueloc: Whole slide digital pathology image tissue localization
 ========
 [![Build Status](https://travis-ci.org/PingjunChen/tissueloc.svg?branch=master)](https://travis-ci.org/PingjunChen/tissueloc)
 [![Documentation Status](https://readthedocs.org/projects/tissueloc/badge/?version=latest)](https://tissueloc.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/tissueloc.svg)](https://badge.fury.io/py/tissueloc)
 ![](https://img.shields.io/github/license/PingjunChen/tissueloc.svg)
-
-## Localize the tissue regions in whole slide pathology images
 
 <img src="tissuelocDemo.png" width="800" height="320" alt="Banner">
 
