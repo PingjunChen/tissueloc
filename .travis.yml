@@ -7,7 +7,7 @@ before_install:
     - sudo apt-get update
     - sudo apt-get install openslide-tools
     - pip install --upgrade pip
-    - pip install requirements.txt
+    - pip install -r requirements.txt
     - pip install -U pytest
 script:
     - cd test
