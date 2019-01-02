@@ -21,7 +21,7 @@ bibliography: paper.bib
 ---
 
 # Background
-``tissueloc`` is an open-source Python package for fast and accurate tissue localization on whole slide image (WSI). Automatic pathology diagnosis using WSI gradually becomes a research hotspot in biomedical imaging domain [@cruz2014automatic, @barker2016automated]. Because of the gigabyte size of WSI, instead of directly taking the WSI as input, patch-based strategy is commonly used to deal with WSI [@cruz2014automatic, @hou2016patch, @chen2018automatic]. As there are large amounts of background regions that are useless for diagnosis, researchers working on automatic WSI diagnosis can utilize ``tissueloc`` to locate genuine tissue regions and focus their analysis on these regions.
+``tissueloc`` is an open-source Python package for fast and accurate tissue localization on whole slide image (WSI). Automatic pathology diagnosis using WSI gradually becomes a research hotspot in biomedical imaging domain [@cruz2014automatic, @barker2016automated]. Because of the gigabyte size of WSI, instead of directly taking the WSI as input, patch-based strategy is commonly used to deal with WSI [@cruz2014automatic, @hou2016patch]. As there are large amounts of background regions that are useless for diagnosis, researchers working on automatic WSI diagnosis can utilize ``tissueloc`` to locate genuine tissue regions and focus their analysis on these regions.
 
 
 # Overview
