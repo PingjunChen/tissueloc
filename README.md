@@ -4,6 +4,8 @@ tissueloc: Whole slide digital pathology image tissue localization
 [![Documentation Status](https://readthedocs.org/projects/tissueloc/badge/?version=latest)](https://tissueloc.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/tissueloc.svg)](https://badge.fury.io/py/tissueloc)
 ![](https://img.shields.io/github/license/PingjunChen/tissueloc.svg)
+[![DOI](http://joss.theoj.org/papers/10.21105/joss.01148/status.svg)](https://doi.org/10.21105/joss.01148)
+
 
 <img src="tissuelocDemo.png" width="800" height="320" alt="Banner">
 
@@ -93,14 +95,27 @@ cnts = tl.find_tissue_cnts(bw_remove)
 ## Documentation
 Hosted in [https://tissueloc.readthedocs.io](https://tissueloc.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
 
+
+## Contributing
+``tissueloc`` is an  open source project and anyone is welcome to contribute. An easy way to get started is by suggesting a new enhancement on the [Issues](https://github.com/PingjunChen/tissueloc/issues). If you have found a bug, then either report this through [Issues](https://github.com/PingjunChen/tissueloc/issues), or even better, make a fork of the repository, fix the bug and then create a [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls) to get the fix into the master branch.
+
+We would like to test this package on more diversified digital slides. Slides (low level images would be better) and their corresponding results are also very welcome as [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls).
+
 ## License
 [tissueloc](https://github.com/PingjunChen/tissueloc) is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
 
 ## Contributors
 See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
 
-
-## Contributing
-``tissueloc`` is an  open source project and anyone is welcome to contribute. An easy way to get started is by suggesting a new enhancement on the [Issues](https://github.com/PingjunChen/tissueloc/issues). If you have found a bug, then either report this through [Issues](https://github.com/PingjunChen/tissueloc/issues), or even better, make a fork of the repository, fix the bug and then create a [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls) to get the fix into the master branch.
-
-We would like to test this package on more diversified digital slides. Slides (low level images would be better) and their corresponding results are also very welcome as [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls).
+<!-- ## Citing
+``tissueloc`` is published in the Journal of Open Source Software - if it's ever useful for your research please consider citing it:
+```
+@inproceedings{zhang2017tandemnet,
+  title={Tandemnet: Distilling knowledge from medical images using diagnostic reports as optional semantic references},
+  author={Zhang, Zizhao and Chen, Pingjun and Sapkota, Manish and Yang, Lin},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={320--328},
+  year={2017},
+  organization={Springer}
+}
+``` -->
