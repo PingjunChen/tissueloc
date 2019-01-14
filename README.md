@@ -86,15 +86,18 @@ We would like to test this package on more diversified digital slides. Slides (l
 ## Contributors
 See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
 
-<!-- ## Citing
+## Citing
 ``tissueloc`` is published in the Journal of Open Source Software - if it's ever useful for your research please consider citing it:
 ```
-@inproceedings{zhang2017tandemnet,
-  title={Tandemnet: Distilling knowledge from medical images using diagnostic reports as optional semantic references},
-  author={Zhang, Zizhao and Chen, Pingjun and Sapkota, Manish and Yang, Lin},
-  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-  pages={320--328},
-  year={2017},
-  organization={Springer}
+@article{chen2019tissueloc,
+  author    = {Pingjun Chen and Lin Yang},
+  title     = {tissueloc: Whole slide digital pathology image tissue localization},
+  journal   = {J. Open Source Software},
+  volume    = {4},
+  number    = {33},
+  pages     = {1148},
+  year      = {2019},
+  url       = {https://doi.org/10.21105/joss.01148},
+  doi       = {10.21105/joss.01148}
 }
-``` -->
+```
