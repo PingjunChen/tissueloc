@@ -13,7 +13,7 @@ tissueloc: Whole slide digital pathology image tissue localization
 ## Installation
 1. Install [OpenSlide](https://openslide.org/download/).
 ```
-$ apt-get install openslide-tools
+$ sudo apt-get install openslide-tools
 ```
 2. Installing Python dependencies.
 ```
