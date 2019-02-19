@@ -1,5 +1,5 @@
 tissueloc: Whole slide digital pathology image tissue localization
-========
+=============
 [![Build Status](https://travis-ci.org/PingjunChen/tissueloc.svg?branch=master)](https://travis-ci.org/PingjunChen/tissueloc)
 [![Documentation Status](https://readthedocs.org/projects/tissueloc/badge/?version=latest)](https://tissueloc.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/tissueloc.svg)](https://badge.fury.io/py/tissueloc)
@@ -10,7 +10,8 @@ tissueloc: Whole slide digital pathology image tissue localization
 
 <img src="tissuelocDemo.png" width="800" height="320" alt="Banner">
 
-## Installation
+Installation
+-------------
 1. Install [OpenSlide](https://openslide.org/download/).
 ```
 $ sudo apt-get install openslide-tools
@@ -26,7 +27,8 @@ $ pip install openslide-python
 $ pip install tissueloc
 ```
 
-## Usage example
+Usage example
+-------------
 #### Interface
 ```
 def locate_tissue_cnts(slide_path,
@@ -70,23 +72,27 @@ cnts, d_factor = locate_tissue_cnts(slide_path,
 ```
 
 
-
-## Documentation
+Documentation
+-------------
 Hosted in [https://tissueloc.readthedocs.io](https://tissueloc.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
 
 
-## Contributing
+Contributing
+-------------
 ``tissueloc`` is an  open source project and anyone is welcome to contribute. An easy way to get started is by suggesting a new enhancement on the [Issues](https://github.com/PingjunChen/tissueloc/issues). If you have found a bug, then either report this through [Issues](https://github.com/PingjunChen/tissueloc/issues), or even better, make a fork of the repository, fix the bug and then create a [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls) to get the fix into the master branch.
 
 We would like to test this package on more diversified digital slides. Slides (low level images would be better) and their corresponding results are also very welcome as [Pull Requests](https://github.com/PingjunChen/tissueloc/pulls).
 
-## License
+License
+-------------
 [tissueloc](https://github.com/PingjunChen/tissueloc) is free software made available under the MIT License. For details see the [LICENSE](LICENSE) file.
 
-## Contributors
+Contributors
+-------------
 See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the project.
 
-## Citing
+Citing
+-------------
 ``tissueloc`` is published in the Journal of Open Source Software - if it's ever useful for your research please consider citing it:
 ```
 @article{chen2019tissueloc,

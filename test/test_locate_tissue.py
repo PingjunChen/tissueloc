@@ -10,11 +10,11 @@ TEST_PATH = os.path.abspath(os.path.dirname(__file__))
 PRJ_PATH = os.path.dirname(TEST_PATH)
 sys.path.insert(0, PRJ_PATH)
 
-
-from tissueloc.load_slide import select_slide_level, load_slide_img
+# from tissueloc.load_slide import select_slide_level
+from tissueloc.load_slide import load_slide_img
 from tissueloc.locate_tissue import rgb2gray, thresh_slide, fill_tissue_holes
 from tissueloc.locate_tissue import remove_small_tissue, find_tissue_cnts
-from tissueloc.locate_tissue import locate_tissue_cnts
+# from tissueloc.locate_tissue import locate_tissue_cnts
 
 
 
