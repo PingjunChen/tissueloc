@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import os, sys
-import numpy as np
-import pytest
+# import numpy as np
+# import pytest
 
 TEST_PATH = os.path.abspath(os.path.dirname(__file__))
 PRJ_PATH = os.path.dirname(TEST_PATH)

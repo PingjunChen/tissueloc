@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
 import numpy as np
 from scipy.ndimage import binary_fill_holes
 from skimage import filters, img_as_ubyte

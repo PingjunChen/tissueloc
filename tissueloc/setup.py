@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
+import os
 
 BASE_PATH = os.path.abspath(os.path.dirname(__file__))
 PKG_NAME = os.path.basename(BASE_PATH)

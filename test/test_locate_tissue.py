@@ -5,7 +5,6 @@ import shutil
 import numpy as np
 import scipy.misc as misc
 import cv2
-import pytest
 
 TEST_PATH = os.path.abspath(os.path.dirname(__file__))
 PRJ_PATH = os.path.dirname(TEST_PATH)
@@ -34,7 +33,7 @@ def test_gen_intermediate_files():
     misc.imsave(os.path.join(output_dir, "gray.png"), gray_img)
     # Step 4: Smooth and Binarize
     thresh_val = 0.8
-    bw_img = thresh_slide(gray_img, thresh_val=0.8, sigma=5)
+    bw_img = thresh_slide(gray_img, thresh_val=thresh_val, sigma=5)
     misc.imsave(os.path.join(output_dir, "bw.png"), (bw_img*255.0).astype(np.uint8))
     # Step 5: Fill tissue holes
     bw_fill = fill_tissue_holes(bw_img)
