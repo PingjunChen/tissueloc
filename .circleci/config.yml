@@ -5,9 +5,9 @@ jobs:
             - image: circleci/python:3.6
         steps:
             - checkout
+            - run: sudo apt-get install openslide-tools
             - run:
                 command: |
-                    apt-get install openslide-tools -y sudo
                     python3 -m venv venv
                     . venv/bin/activate
                     pip install --upgrade pip
