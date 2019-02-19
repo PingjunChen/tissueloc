@@ -12,6 +12,6 @@ jobs:
             - image: circleci/python:3.6
         steps:
             - checkout
-            -run:
+            - run:
                 name: Test
                 command: cd test && pytest .
