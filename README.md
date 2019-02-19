@@ -71,11 +71,9 @@ cnts, d_factor = locate_tissue_cnts(slide_path,
                                     min_tissue_size=10000)
 ```
 
-
 Documentation
 -------------
 Hosted in [https://tissueloc.readthedocs.io](https://tissueloc.readthedocs.io), powered by [readthedocs](https://readthedocs.org) and [Sphinx](http://www.sphinx-doc.org).
-
 
 Contributing
 -------------
