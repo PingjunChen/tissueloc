@@ -8,7 +8,7 @@ tissueloc: Whole slide digital pathology image tissue localization
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/PingjunChen)
 ![](https://img.shields.io/github/stars/PingjunChen/tissueloc.svg)
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2529982.svg)](https://doi.org/10.5281/zenodo.2529982) -->
-<img src="tissuelocDemo.png" width="800" height="320" alt="Banner">
+<img src="./docs/media/tissuelocDemo.png" width="800" height="320" alt="Banner">
 
 Installation
 -------------
