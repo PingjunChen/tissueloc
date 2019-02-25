@@ -24,7 +24,7 @@ $ pip install openslide-python
 ```
 3. Install [tissueloc](https://pypi.org/project/tissueloc/).
 ```
-$ pip install tissueloc
+$ pip install tissueloc==1.5.0
 ```
 
 Usage example
