@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
 from setuptools import setup, find_packages
 import tissueloc
 

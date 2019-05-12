@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import os, sys
 import openslide
 from PIL import Image
 import numpy as np
@@ -35,7 +34,7 @@ def select_slide_level(slide_path, max_size=2048):
     level_dims = slide_head.level_dimensions
 
     d_factors = slide_head.level_downsamples
-    assert len(level_dims) > 1, "This slide doesnot have mutliple levels"
+    # assert len(level_dims) > 1, "This slide doesnot have mutliple levels"
     select_level = len(level_dims) - 1
     for ind in np.arange(len(level_dims)):
         cur_w, cur_h = level_dims[ind]
@@ -77,7 +76,7 @@ def load_slide_img(slide_path, level=0):
     img_size = slide_head.level_dimensions[level]
     slide_img = slide_head.read_region((0, 0), level, img_size)
     if isinstance(slide_img, Image.Image):
-        slide_img = im = np.asarray(slide_img)
+        slide_img = np.asarray(slide_img)
     if slide_img.shape[2] == 4:
         slide_img = slide_img[:, :, :-1]
     return slide_img
