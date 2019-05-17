@@ -9,7 +9,7 @@ tissueloc: Whole slide digital pathology image tissue localization
 ![](https://img.shields.io/github/stars/PingjunChen/tissueloc.svg)
 <img src="./docs/media/tissuelocDemo.png" width="800" height="320" alt="Banner">
 
-Please `star` this repo if you find [tissueloc](https://github.com/PingjunChen/tissueloc) to be helpful for your work.
+Please consider `star` this repo if you find [tissueloc](https://github.com/PingjunChen/tissueloc) to be helpful for your work.
 
 Installation
 -------------
