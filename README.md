@@ -5,9 +5,9 @@ tissueloc: Whole slide digital pathology image tissue localization
 [![Documentation Status](https://readthedocs.org/projects/tissueloc/badge/?version=latest)](https://tissueloc.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/tissueloc.svg)](https://badge.fury.io/py/tissueloc)
 [![DOI](http://joss.theoj.org/papers/10.21105/joss.01148/status.svg)](https://doi.org/10.21105/joss.01148)
-<!-- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/PingjunChen) -->
 ![](https://img.shields.io/github/stars/PingjunChen/tissueloc.svg)
 <img src="./docs/media/tissuelocDemo.png" width="800" height="320" alt="Banner">
+<!-- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/PingjunChen) -->
 
 Please consider `star` this repo if you find [tissueloc](https://github.com/PingjunChen/tissueloc) to be helpful for your work.
 
