@@ -4,6 +4,7 @@ import os, sys
 import shutil
 import numpy as np
 import scipy.misc as misc
+from skimage import io
 import cv2
 
 TEST_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -26,8 +27,8 @@ def test_gen_intermediate_files():
     os.makedirs(output_dir)
 
     # Step 2: Load Slide image with selected level
-    slide_img = misc.imread(img_path)
-    misc.imsave(os.path.join(output_dir, "ori.png"), slide_img)
+    slide_img = io.imread(img_path)
+    io.imsave(os.path.join(output_dir, "ori.png"), slide_img)
     # Step 3: Convert color image to gray
     gray_img = rgb2gray(slide_img)
     misc.imsave(os.path.join(output_dir, "gray.png"), gray_img)
