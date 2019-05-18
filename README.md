@@ -92,7 +92,7 @@ See the [AUTHORS.md](AUTHORS.md) file for a complete list of contributors to the
 
 Citing
 -------------
-``tissueloc`` is published in the Journal of Open Source Software - please cite if it's useful for your research:
+``tissueloc`` is published in the [Journal of Open Source Software](http://joss.theoj.org/papers/10.21105/joss.01148) - please consider `cite` if it's useful for your research:
 ```
 @article{chen2019tissueloc,
   author    = {Pingjun Chen and Lin Yang},
