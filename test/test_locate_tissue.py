@@ -3,7 +3,7 @@
 import os, sys
 import shutil
 import numpy as np
-from skimage import io
+from skimage import io, color
 import cv2
 
 TEST_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -12,7 +12,7 @@ sys.path.insert(0, PRJ_PATH)
 
 # from tissueloc.load_slide import select_slide_level
 from tissueloc.load_slide import load_slide_img
-from tissueloc.locate_tissue import rgb2gray, thresh_slide, fill_tissue_holes
+from tissueloc.locate_tissue import thresh_slide, fill_tissue_holes
 from tissueloc.locate_tissue import remove_small_tissue, find_tissue_cnts
 # from tissueloc.locate_tissue import locate_tissue_cnts
 
@@ -29,7 +29,7 @@ def test_gen_intermediate_files():
     slide_img = io.imread(img_path)
     io.imsave(os.path.join(output_dir, "ori.png"), slide_img)
     # Step 3: Convert color image to gray
-    gray_img = rgb2gray(slide_img)
+    gray_img = color.rgb2gray(slide_img)
     io.imsave(os.path.join(output_dir, "gray.png"), gray_img)
     # Step 4: Smooth and Binarize
     thresh_val = 0.8
