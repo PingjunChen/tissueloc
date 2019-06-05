@@ -65,11 +65,8 @@ Testing slide can be downloaded from [Figshare](https://figshare.com/articles/De
 import tissueloc as tl
 slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
 # locate tissue contours with default parameters
-cnts, d_factor = locate_tissue_cnts(slide_path,
-                                    max_img_size=2048,
-                                    smooth_sigma=13,
-                                    thresh_val=0.80,
-                                    min_tissue_size=10000)
+cnts, d_factor = tl.locate_tissue_cnts(slide_path, max_img_size=2048, smooth_sigma=13, 
+                                       thresh_val=0.80,min_tissue_size=10000)
 ```
 
 Documentation
