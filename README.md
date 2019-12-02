@@ -8,7 +8,6 @@ tissueloc: Whole slide digital pathology image tissue localization
 [![Downloads](https://pepy.tech/badge/tissueloc)](https://pepy.tech/project/tissueloc)
 ![](https://img.shields.io/github/stars/PingjunChen/tissueloc.svg)
 <img src="./docs/media/tissuelocDemo.png" width="800" height="320" alt="Banner">
-<!-- [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/PingjunChen) -->
 
 Please consider `star` this repo if you find [tissueloc](https://github.com/PingjunChen/tissueloc) to be helpful for your work.
 
@@ -66,7 +65,7 @@ Testing slide can be downloaded from [Figshare](https://figshare.com/articles/De
 import tissueloc as tl
 slide_path = "../data/SoftTissue/TCGA-B9EB312E82F6.svs"
 # locate tissue contours with default parameters
-cnts, d_factor = tl.locate_tissue_cnts(slide_path, max_img_size=2048, smooth_sigma=13, 
+cnts, d_factor = tl.locate_tissue_cnts(slide_path, max_img_size=2048, smooth_sigma=13,
                                        thresh_val=0.80,min_tissue_size=10000)
 ```
 
