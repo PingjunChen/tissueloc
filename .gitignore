@@ -5,6 +5,8 @@ data/
 .DS_Store
 *.pyc
 __pycache__/
+.coverage
+.coverage.*
 
 # Virtual environment
 .venv
