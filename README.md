@@ -1,6 +1,7 @@
 tissueloc: Whole slide digital pathology image tissue localization
 =============
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2f1d165f709e43c4bc6d1d3a6563418e)](https://app.codacy.com/app/PingjunChen/tissueloc?utm_source=github.com&utm_medium=referral&utm_content=PingjunChen/tissueloc&utm_campaign=Badge_Grade_Dashboard)
+[![codecov](https://codecov.io/gh/PingjunChen/tissueloc/branch/master/graph/badge.svg)](https://codecov.io/gh/PingjunChen/tissueloc)
 [![Build Status](https://travis-ci.org/PingjunChen/tissueloc.svg?branch=master)](https://travis-ci.org/PingjunChen/tissueloc)
 [![Documentation Status](https://readthedocs.org/projects/tissueloc/badge/?version=latest)](https://tissueloc.readthedocs.io/en/latest/?badge=latest)
 [![PyPI version](https://badge.fury.io/py/tissueloc.svg)](https://badge.fury.io/py/tissueloc)
