@@ -14,13 +14,10 @@ sys.path.insert(0, PRJ_PATH)
 from tissueloc.load_slide import load_slide_img
 from tissueloc.locate_tissue import thresh_slide, fill_tissue_holes
 from tissueloc.locate_tissue import remove_small_tissue, find_tissue_cnts
-# from tissueloc.locate_tissue import locate_tissue_cnts
-
-
 
 def test_gen_intermediate_files():
-    img_path = "./data/Imgs/20181218042458.jpg"
-    output_dir = "./data/Output/20181218042458"
+    img_path = os.path.join(TEST_PATH, "data/Imgs/20181218042458.jpg")
+    output_dir = os.path.join(TEST_PATH, "data/Output/20181218042458")
     if os.path.exists(output_dir):
         shutil.rmtree(output_dir)
     os.makedirs(output_dir)
