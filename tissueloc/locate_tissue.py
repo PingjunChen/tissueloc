@@ -67,6 +67,7 @@ def fill_tissue_holes(bw_img):
 
     return bw_fill
 
+
 def remove_small_tissue(bw_img, min_size=10000):
     """ Remove small holes in tissue image
     Parameters
@@ -98,9 +99,8 @@ def find_tissue_cnts(bw_img):
         List of all contours coordinates of tissues.
     """
 
-    _, cnts, _ = cv2.findContours(img_as_ubyte(bw_img),
-                                  mode=cv2.RETR_EXTERNAL,
-                                  method=cv2.CHAIN_APPROX_NONE)
+    cnts, _ = cv2.findContours(img_as_ubyte(bw_img), mode=cv2.RETR_EXTERNAL,
+                               method=cv2.CHAIN_APPROX_NONE)
 
     return cnts
 
