@@ -20,9 +20,9 @@ $ sudo apt-get install openslide-tools
 ```
 2. Installing Python dependencies.
 ```
-$ pip install opencv-python
-$ pip install scikit-image
-$ pip install openslide-python
+$ pip install scikit-image==0.14.2
+$ pip install opencv-python==4.1.2.30
+$ pip install openslide-python==1.1.1
 ```
 3. Install [tissueloc](https://pypi.org/project/tissueloc/).
 ```
