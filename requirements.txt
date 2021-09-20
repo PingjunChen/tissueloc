@@ -1,5 +1,5 @@
 numpy==1.16.2
 scikit-image==0.14.2
-Pillow==8.1.1
+Pillow==8.3.2
 opencv-python==4.1.2.30
 openslide-python==1.1.1
