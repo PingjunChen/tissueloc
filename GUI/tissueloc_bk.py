@@ -19,6 +19,7 @@ class Ui_tissueloc(object):
     def setupUi(self, tissueloc):
         tissueloc.setObjectName("tissueloc")
         tissueloc.resize(810, 708)
+        tissueloc.setFixedSize(810, 708)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -78,6 +79,7 @@ class Ui_tissueloc(object):
         self.image = cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)
         # convert to rgb to gray
         self.gray_img = rgb2gray(self.image)
+        self.color_slider.setValue(self.color_value_now)
         cnts = locate_tissue_cnts(self.gray_img, self.color_value_now)
 
         show_img = copy.deepcopy(self.image)
