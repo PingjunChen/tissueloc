@@ -9,7 +9,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtGui import QImage
-import cv2, imutils
+import cv2, imutils, copy
+import numpy as np
+
+from tl_utils import rgb2gray, locate_tissue_cnts
 
 
 class Ui_tissueloc(object):
@@ -55,7 +58,8 @@ class Ui_tissueloc(object):
         tissueloc.setStatusBar(self.statusbar)
 
         self.retranslateUi(tissueloc)
-        self.color_slider.valueChanged['int'].connect(self.color_slider.setValue)
+        self.color_slider.setRange(132, 228)
+        self.color_slider.valueChanged['int'].connect(self.color_value)
         self.open_btn.clicked.connect(self.loadImage)
         self.save_btn.clicked.connect(self.save_btn.click)
         QtCore.QMetaObject.connectSlotsByName(tissueloc)
@@ -63,8 +67,7 @@ class Ui_tissueloc(object):
 
 		# Added code here
         self.filename = None # Will hold the image address location
-        self.tmp = None # Will hold the temporary image for display
-        self.color_value_now = 0 # Updated brightness value
+        self.color_value_now = 200 # Updated brightness value
         self.max_width = 780
         self.max_height = 680
 
@@ -72,20 +75,49 @@ class Ui_tissueloc(object):
     def loadImage(self):
         self.filename = QFileDialog.getOpenFileName(filter="Image (*.*)")[0]
         self.image = cv2.imread(self.filename)
-        self.setPhoto(self.image)
+        self.image = cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)
+        # convert to rgb to gray
+        self.gray_img = rgb2gray(self.image)
+        cnts = locate_tissue_cnts(self.gray_img, self.color_value_now)
+
+        show_img = copy.deepcopy(self.image)
+        cv2.drawContours(show_img, cnts, -1, (0, 255, 0), 9)
+        self.setPhoto(show_img)
 
 
-    def setPhoto(self,image):
-        self.tmp = image
+    def setPhoto(self, image):
         hw_ratio = image.shape[0] * 1.0 / image.shape[1]
         if hw_ratio <= self.max_height * 1.0 / self.max_width:
             resize_w = self.max_width
         else:
             resize_w = int(image.shape[1] * self.max_height * 1.0 / image.shape[0])
         image = imutils.resize(image, width = resize_w)
-        frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        image = QImage(frame, frame.shape[1],frame.shape[0],frame.strides[0],QImage.Format_RGB888)
+        image = QImage(image, image.shape[1], image.shape[0], image.strides[0], QImage.Format_RGB888)
         self.img_lbl.setPixmap(QtGui.QPixmap.fromImage(image))
+        self.img_lbl.setAlignment(QtCore.Qt.AlignCenter)
+
+
+    def color_value(self, value):
+        """ Take the colore threshold from vertical slider.
+        """
+        self.color_value_now = value
+        print("Current threshold: {}".format(self.color_value_now))
+        self.update_tissueloc()
+
+
+    def changeColorValue(self, img, value):
+        """ Take the image and the threshold and perform the tissue localization.
+        """
+        cnts = locate_tissue_cnts(self.gray_img, self.color_value_now)
+        show_img = copy.deepcopy(self.image)
+        cv2.drawContours(show_img, cnts, -1, (0, 255, 0), 9)
+
+        return show_img
+
+
+    def update_tissueloc(self):
+        img = self.changeColorValue(self.image, self.color_value_now)
+        self.setPhoto(img)
 
 
     def retranslateUi(self, tissueloc):
