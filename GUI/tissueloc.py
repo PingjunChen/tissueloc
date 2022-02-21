@@ -6,7 +6,7 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets\
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtGui import QImage
 import cv2, imutils
@@ -56,36 +56,36 @@ class Ui_tissueloc(object):
 
         self.retranslateUi(tissueloc)
         self.color_slider.valueChanged['int'].connect(self.color_slider.setValue)
-        self.open_btn.clicked.connect(self.open_btn.click)
+        self.open_btn.clicked.connect(self.loadImage)
         self.save_btn.clicked.connect(self.save_btn.click)
         QtCore.QMetaObject.connectSlotsByName(tissueloc)
 
 
 		# Added code here
-		self.filename = None # Will hold the image address location
-		self.tmp = None # Will hold the temporary image for display
-		self.color_value_now = 0 # Updated brightness value
+        self.filename = None # Will hold the image address location
+        self.tmp = None # Will hold the temporary image for display
+        self.color_value_now = 0 # Updated brightness value
+        self.max_width = 780
+        self.max_height = 680
 
 
-	def loadImage(self):
-		""" This function will load the user selected image
-			and set it to label using the setPhoto function
-		"""
-		self.filename = QFileDialog.getOpenFileName(filter="Image (*.*)")[0]
-		self.image = cv2.imread(self.filename)
-		self.setPhoto(self.image)
+    def loadImage(self):
+        self.filename = QFileDialog.getOpenFileName(filter="Image (*.*)")[0]
+        self.image = cv2.imread(self.filename)
+        self.setPhoto(self.image)
 
 
-	def setPhoto(self,image):
-		""" This function will take image input and resize it
-			only for display purpose and convert it to QImage
-			to set at the label.
-		"""
-		self.tmp = image
-		image = imutils.resize(image, width=640)
-		frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-		image = QImage(frame, frame.shape[1],frame.shape[0],frame.strides[0],QImage.Format_RGB888)
-		self.img_lbl.setPixmap(QtGui.QPixmap.fromImage(image))
+    def setPhoto(self,image):
+        self.tmp = image
+        hw_ratio = image.shape[0] * 1.0 / image.shape[1]
+        if hw_ratio <= self.max_height * 1.0 / self.max_width:
+            resize_w = self.max_width
+        else:
+            resize_w = int(image.shape[1] * self.max_height * 1.0 / image.shape[0])
+        image = imutils.resize(image, width = resize_w)
+        frame = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = QImage(frame, frame.shape[1],frame.shape[0],frame.strides[0],QImage.Format_RGB888)
+        self.img_lbl.setPixmap(QtGui.QPixmap.fromImage(image))
 
 
     def retranslateUi(self, tissueloc):
