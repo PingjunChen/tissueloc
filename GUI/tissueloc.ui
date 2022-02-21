@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>810</width>
-    <height>708</height>
+    <width>1071</width>
+    <height>710</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,41 +29,67 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>11</x>
-      <y>11</y>
-      <width>791</width>
-      <height>671</height>
+      <x>12</x>
+      <y>12</y>
+      <width>1041</width>
+      <height>661</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0" colspan="2">
+     <item row="0" column="0" rowspan="3" colspan="2">
       <widget class="QLabel" name="img_lbl">
        <property name="text">
         <string/>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_max">
+       <property name="text">
+        <string>228</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QSlider" name="color_slider">
+       <property name="minimum">
+        <number>132</number>
+       </property>
+       <property name="maximum">
+        <number>228</number>
+       </property>
+       <property name="singleStep">
+        <number>4</number>
+       </property>
+       <property name="value">
+        <number>204</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_min">
+       <property name="text">
+        <string>132</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
       <widget class="QPushButton" name="open_btn">
        <property name="text">
         <string>Open</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
+     <item row="3" column="1">
       <widget class="QPushButton" name="save_btn">
        <property name="text">
         <string>Save</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QSlider" name="color_slider">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
        </property>
       </widget>
      </item>
