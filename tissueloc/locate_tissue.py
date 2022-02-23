@@ -68,7 +68,7 @@ def fill_tissue_holes(bw_img):
     return bw_fill
 
 
-def remove_small_tissue(bw_img, min_size=10000):
+def remove_small_tissue(bw_img, min_size=50000):
     """ Remove small holes in tissue image
     Parameters
     ----------
