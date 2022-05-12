@@ -75,7 +75,8 @@ class Ui_tissueloc(object):
         self.retranslateUi(tissueloc)
         self.color_slider.valueChanged['int'].connect(self.color_value)
         self.open_btn.clicked.connect(self.loadImage)
-        self.save_btn.clicked.connect(self.saveContours)
+        # self.save_btn.clicked.connect(self.saveContours)
+        self.save_btn.clicked.connect(self.saveMasks)
         QtCore.QMetaObject.connectSlotsByName(tissueloc)
 
 		# Added code here
@@ -142,6 +143,16 @@ class Ui_tissueloc(object):
         cnt_path = os.path.join(img_dir, img_name + "_cnts.pkl")
         with open(cnt_path, "wb") as fp:
             pickle.dump(self.cnts, fp)
+
+
+    def saveMasks(self):
+        mask_img = np.zeros((self.image.shape[0], self.image.shape[1])).astype(np.uint8)
+        cv2.drawContours(mask_img, self.cnts, -1, 255, -1)
+        img_dir = os.path.dirname(self.filename)
+        img_fullname = os.path.basename(self.filename)
+        img_name = os.path.splitext(img_fullname)[0]
+        mask_path = os.path.join(img_dir, img_name + ".bmp")
+        io.imsave(mask_path, mask_img)
 
 
     def retranslateUi(self, tissueloc):
